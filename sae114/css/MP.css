@@ -1,0 +1,72 @@
+html{
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(90deg,rgb(0, 89, 255), purple);
+    color: rgb(0, 0, 0);
+}
+
+header{
+	grid-area: he;
+	height:100px;
+	text-align: center;
+	background: linear-gradient(90deg,rgb(0, 89, 255), purple);
+}
+body{
+	grid-area: bo;
+	background-color: aliceblue;
+
+}
+span{
+	grid-area: img;
+	background: linear-gradient(90deg,rgb(0, 89, 255), purple);
+
+}
+nav{
+	grid-area: na;
+	text-align: justify;
+	color: #000;
+	background: linear-gradient(90deg,rgb(0, 89, 255), purple);
+}
+section{
+	grid-area: se;
+	
+
+}
+
+footer{
+	grid-area: fo;
+	background: linear-gradient(90deg,rgb(0, 89, 255), purple);
+	float: right ;
+}
+aside{
+	grid-area: as;
+	background: linear-gradient(90deg,rgb(0, 89, 255), purple);
+}
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr; 
+	grid-auto-rows: minmax(0px, auto); 
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	grid-template-areas:
+	"na na na"
+	"img img img"
+	"he he he "
+	"he he he "
+	"se se se"
+	"as as as"
+	"fo fo fo";
+}
+button {
+	border: 0;
+	line-height: 2.5;
+	padding: 0 20px;
+	font-size: 1rem;
+	color: #000;
+	text-align: center;
+	text-shadow: 1px 1px 1px #000;
+	border-radius: 10px;
+	background-color: rgb(170, 79, 245);
+	box-shadow:
+	  inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+	  inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
